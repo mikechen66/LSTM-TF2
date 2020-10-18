@@ -7,7 +7,7 @@ Please change the actual path based on the output from the command '$ python tra
 script of predict.py. For example, there are two models saved while running the above command 2 times.
 
 # 1st run:
-"Model saved in: checkpoints/1603001049"
+"Model saved in: checkpoints/1603012075"
 # 2nd run: 
 "Model saved in: checkpoints/1603002421" 
 """
@@ -31,9 +31,9 @@ ops.reset_default_graph()
 
 
 # Give the path to the three necessary directory. 
-checkpoints_dir = '/home/mic/Documents/keras_lstm/LSTM_Sentiment/checkpoints/1603001049' 
-data_dir = '/home/mic/Documents/keras_lstm/LSTM_Sentiment/data/' 
-stopwords_file = '/home/mic/Documents/keras_lstm/LSTM_Sentiment/data/stopwords.txt' 
+checkpoints_dir = '/home/mike/Documents/keras_lstm/LSTM_Sentiment/checkpoints/1603012075' 
+data_dir = '/home/mike/Documents/keras_lstm/LSTM_Sentiment/data/' 
+stopwords_file = '/home/mike/Documents/keras_lstm/LSTM_Sentiment/data/stopwords.txt' 
 
 
 sequence_len = None # Maximum sequence length
