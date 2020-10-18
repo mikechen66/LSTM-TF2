@@ -1,10 +1,16 @@
 Notes:
 
-Please run the following command in the Linux Terminal to run the TensorBoard 
+Please run the following command to run the TensorBoard in either the Linux Terminal or
+the jupytern notebook. Please rember to change the sample path to your own path. 
+
+Option A: Linux Terminal 
 
 1. Enter the current directory.
+After excuting the script of predict.py, users can input the following command to initiate
+the TensorBoard.
 
-$ tensorboard --logdir /home/mic/Documents/keras_lstm/LSTM_Sentiment/logs
+$ tensorboard --logdir /home/mike/Documents/keras_lstm/LSTM_Sentiment/logs
+
 Serving TensorBoard on localhost; to expose to the network, use a proxy or pass --bind_all
 TensorBoard 2.2.1 at http://localhost:6006/ (Press CTRL+C to quit)
 
@@ -17,7 +23,10 @@ http://localhost:6006/
 And then the TensorBoard will show both the scalar and the graph 
 
 
+Option B: Jupyter Notebook
 
+# 1.Load the TensorBoard notebook extension
+%load_ext tensorboard
 
-
-
+# 2.Show the scalars and the graph
+%tensorboard --logdir='/home/mic/Documents/keras_lstm/LSTM_Sentiment/logs'
