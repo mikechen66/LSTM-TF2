@@ -1,9 +1,39 @@
 Notes:
 
+
+
+Please set the GPU Memory with one of the two options as follows. 
+
+＃ Set up the GPU Memory 
+
+## 1.Set up the GPU to avoid the runtime error: Could not create cuDNN handle...
+gpus = tf.config.experimental.list_physical_devices('GPU')
+for gpu in gpus:
+    tf.config.experimental.set_memory_growth(gpu, True)
+
+or 
+
+## 2. Set up the GPU memory size to avoid the out-of-memory error
+gpus = tf.config.experimental.list_physical_devices('GPU')
+if gpus:
+  # Restrict TensorFlow to only allocate 4GB of memory on the first GPU
+  try:
+    tf.config.experimental.set_virtual_device_configuration(
+        gpus[0],
+        [tf.config.experimental.VirtualDeviceConfiguration(memory_limit=4096)])
+    logical_gpus = tf.config.experimental.list_logical_devices('GPU')
+    print(len(gpus), "Physical GPUs,", len(logical_gpus), "Logical GPUs")
+  except RuntimeError as e:
+    # Virtual devices must be set before GPUs have been initialized
+    print(e)
+
+
+# Set the TensorBoard 
+
 Please run the following command to run the TensorBoard in either the Linux Terminal or
 the jupytern notebook. Please rember to change the sample path to your own path. 
 
-Option A: Linux Terminal 
+## Option A: Linux Terminal 
 
 1. Enter the current directory.
 After excuting the script of predict.py, users can input the following command to initiate
@@ -22,8 +52,10 @@ http://localhost:6006/
 
 And then the TensorBoard will show both the scalar and the graph 
 
+or 
 
-Option B: Jupyter Notebook
+
+## Option B: Jupyter Notebook
 
 # 1.Load the TensorBoard notebook extension
 %load_ext tensorboard
