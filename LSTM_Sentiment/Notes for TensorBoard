@@ -1,0 +1,23 @@
+Notes:
+
+Please run the following command in the Linux Terminal to run the TensorBoard 
+
+1. Enter the current directory.
+
+$ tensorboard --logdir /home/mic/Documents/keras_lstm/LSTM_Sentiment/logs
+Serving TensorBoard on localhost; to expose to the network, use a proxy or pass --bind_all
+TensorBoard 2.2.1 at http://localhost:6006/ (Press CTRL+C to quit)
+
+2. Run the TensorBoard
+
+Copy the weblink at your browser
+
+http://localhost:6006/
+
+And then the TensorBoard will show both the scalar and the graph 
+
+
+
+
+
+
