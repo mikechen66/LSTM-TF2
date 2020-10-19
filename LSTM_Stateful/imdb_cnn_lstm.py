@@ -3,7 +3,7 @@
 
 """
 Train a recurrent convolutional network on the IMDB sentiment classification task.
-Gets to 0.8507 test accuracy after 2 epochs. 
+Gets to 0.851 test accuracy after 2 epochs. 
 """
 from __future__ import print_function
 import tensorflow as tf 
