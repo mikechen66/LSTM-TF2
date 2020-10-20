@@ -1,0 +1,13 @@
+har_dataset_download
+
+The experiments have been video-recorded to facilitate manually labeling of the data. The dataset 
+has been randomly partitioned into two sets, where 70% of the volunteers were selected for the 
+training data and 30% for the testing data. 
+
+When exploring the dataset, both the training and testing set have the following file structure.
+Please download and change the HAR Dataset's name to UCIHARDataset. It originally has the size of 
+61MiB in a zip file. And it will has 282 MiB after unzipping. 
+
+HAR Dataset(61MiB): 
+https://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip
+
