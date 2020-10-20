@@ -78,7 +78,7 @@ LABELS = [
     "LAYING"
 ] 
 
-DATASET_PATH = "/home/mic/Documents/keras_lstm/LSTM_HAR/UCIHARDataset/"
+DATASET_PATH = "/home/mike/Documents/keras_lstm/LSTM_HAR/UCIHARDataset/"
 print("\n" + "Dataset is now located at: " + DATASET_PATH)
 
 
@@ -150,7 +150,7 @@ batch_size = 1500
 display_iter = 30000  # To show test set accuracy during training
 
 
-# Some debugging info
+# Print debugging info
 print("Some useful info to get an insight on dataset's shape and normalisation:")
 print("(X shape, y shape, every X's mean, every X's standard deviation)")
 print(X_test.shape, y_test.shape, np.mean(X_test), np.std(X_test))
@@ -245,9 +245,7 @@ correct_pred = tf.equal(tf.argmax(pred,1), tf.argmax(y,1))
 accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
 
 
-# --------------------------------------------
-# Step 4: Hooray, now train the neural network
-# --------------------------------------------
+# Train the neural network
 
 # To keep track of training's performance
 test_losses = []
@@ -321,9 +319,7 @@ print("FINAL RESULT: " + \
       ", Accuracy = {}".format(accuracy))
 
 
-# ------------------------------------------------------------------
-# Step 5: Training is good, but having visual insight is even better
-# ------------------------------------------------------------------
+# Plot the visual insight
 
 indep_train_axis = np.array(range(batch_size, (len(train_losses)+1)*batch_size, batch_size))
 plt.plot(indep_train_axis, np.array(train_losses),     "b--", label="Train losses")
