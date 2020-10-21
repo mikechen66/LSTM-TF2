@@ -1,0 +1,38 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 3 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: TimeSeriesPredictor.py
+--------------------------------------------------------------------------------
+TimeSeriesPredictor.py:24:8: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+TimeSeriesPredictor.py:27:8: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+TimeSeriesPredictor.py:73:24: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'TimeSeriesPredictor.py'
+ outputting to 'TimeSeriesPredictor_tf2.py'
+--------------------------------------------------------------------------------
+
+24:8: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+24:8: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+27:8: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+27:8: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+29:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+30:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+40:23: INFO: Added keywords to args of function 'tf.shape'
+51:13: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+52:12: INFO: Renamed 'tf.get_variable_scope' to 'tf.compat.v1.get_variable_scope'
+53:21: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+73:24: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+77:7: INFO: Added keywords to args of function 'tf.reduce_mean'
+78:11: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+81:8: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+83:8: INFO: Renamed 'tf.get_variable_scope' to 'tf.compat.v1.get_variable_scope'
+117:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+--------------------------------------------------------------------------------
+
