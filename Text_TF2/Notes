@@ -4,6 +4,8 @@ The scripts included in the folder are sample scripts made by TensorFlow Team.
 To adapt to both Tensorflow 2.2 and Keras 2.4.3, there are some modifications
 on each of the scripts. 
 
+# image_captioning.ipynb
+
 With regard to the image captioning mode,it is similar to Show, Attend and Tell: 
 Neural Image Caption Generation with Visual Attention.
 
@@ -24,3 +26,19 @@ This notebook is an end-to-end example. While running the notebook during the
 runtime, it automatically  downloads the MS-COCO dataset, preprocesses and 
 caches a subset of images using Inception V3, trains an encoder-decoder model, 
 and generates captions on new images using the trained model. 
+
+
+# transformer.ipynb
+
+1. Requirements:
+
+Users have to install for running the update tensorflow-datasets 4.0.1 to run
+the script. 
+
+pip install tensorflow-datasets
+or 
+pip install --upgrade tensorflow-datasets
+
+2. Epochs 
+
+There are 20 epochs that will be showing during the runtime. 
