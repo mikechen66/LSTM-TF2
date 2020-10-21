@@ -33,7 +33,7 @@ and generates captions on new images using the trained model.
 1. Requirements:
 
 Users have to install for running the update tensorflow-datasets 4.0.1 to run
-the script. 
+the script. Othwise, the runtime will generate an error. 
 
 pip install tensorflow-datasets
 or 
@@ -41,4 +41,5 @@ pip install --upgrade tensorflow-datasets
 
 2. Epochs 
 
-There are 20 epochs that will be showing during the runtime. 
+There are 20 epochs that will be showing during the runtime. Without running the 
+script, the explicit epochs will be not shown. 
