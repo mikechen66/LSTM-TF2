@@ -1,0 +1,13 @@
+Notes:
+
+The two of the data files are zipped due to the limitation
+of the limitations of big file at Github. The four data files
+are listed as follows. 
+
+1. funamentals.csv
+2. prices.csv (prices.zip)
+3. prices-split-adjusted.csv(prices-split-adjusted)
+4. securities.csv
+
+Please upzip the two zipped files for running the script 
+of either predict_apple.py or predict_apple.ipynb. 
