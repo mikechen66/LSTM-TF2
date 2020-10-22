@@ -1,7 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# lstm.py
+# lstm_call.py
+
+"""
+The scropt is used to build the model based on the LSTM model in the recurrent_v2.py
+"""
 
 from __future__ import division
 import numpy as np
