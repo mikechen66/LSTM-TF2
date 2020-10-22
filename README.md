@@ -6,7 +6,7 @@ as RNN. NASNet is a typical example. LSTM will be merging with the CNN models to
 
 Make the necessary changes to adapt to the environment of TensorFlow 2.3, Keras 2.4.3, CUDA Toolkit 11.0, cuDNN 8.0.1 and CUDA 
 450.57. In addition, write the new lines of code to replace the deprecated code. I would like to take the opportunity to thank 
-the LSTM creators, Giancario Zaccone, jaungiers, munozalexander the precious contributions. 
+the LSTM creators, Giancario Zaccone, jaungiers, munozalexander for their precious contributions. 
 
 LSTM Paper:
 
